@@ -21,17 +21,17 @@ $final_four= get_field('final_four');
                 <?php foreach($premier_tour as $element_premier_tour){?>
                     <div class="listes-calendrier-element">
                         <div class="lcel-date">
-                            <div class="lcel-jour"><?php echo $element_premier_tour['jour'];?></div>
-                            <div><?php echo $element_premier_tour['mois'];?></div>
+                            <div class="lcel-jour"><? echo $element_premier_tour['jour'];?></div>
+                            <div><? echo $element_premier_tour['mois'];?></div>
                         </div>
                         <div class="lcel-details">
                             <div class="lcel-details-title">
-                                <div><?php echo $element_premier_tour['titre'];?></div>
-                                <div> (<?php echo $element_premier_tour['poule'];?>)</div>
+                                <div><? echo $element_premier_tour['titre'];?></div>
+                                <div> (<? echo $element_premier_tour['poule'];?>)</div>
                             </div>
-                            <div class="lcel-lieu"><?php echo $element_premier_tour['lieu'];?></div>
+                            <div class="lcel-lieu"><? echo $element_premier_tour['lieu'];?></div>
                             <?php if($element_premier_tour['lien']):?>
-                                <div class="lcel-billet"><a href="<?php echo $element_premier_tour['lien'];?>" target="_blank"  title="Billetterie Réservation"><span class="border-icon"><i class="fa-sharp fa-solid fa-ticket"></i></span></a></div>
+                                <div class="lcel-billet"><a href="<? echo $element_premier_tour['lien'];?>" target="_blank"  title="Billetterie Réservation"><span class="border-icon"><i class="fa-sharp fa-solid fa-ticket"></i></span></a></div>
                             <?php endif;?>
                         </div>
                     </div>
@@ -49,14 +49,14 @@ $final_four= get_field('final_four');
                     ?>
                     
                         <div class="lcel-date">
-                            <div class="lcel-jour"><?php echo $quarts_de_finale['jour'];?></div>
-                            <div><?php echo $quarts_de_finale['mois'];?></div>
+                            <div class="lcel-jour"><? echo $quarts_de_finale['jour'];?></div>
+                            <div><? echo $quarts_de_finale['mois'];?></div>
                         </div>
                         <div class="lcel-details">
-                            <div class="lcel-details-title"><?php echo $quarts_de_finale['titre'];?></div>
-                            <div class="lcel-lieu"><?php echo $quarts_de_finale['lieu'];?></div>
+                            <div class="lcel-details-title"><? echo $quarts_de_finale['titre'];?></div>
+                            <div class="lcel-lieu"><? echo $quarts_de_finale['lieu'];?></div>
                             <?php if($quarts_de_finale['lien']):?>
-                                <div class="lcel-billet"><a href="<?php echo $quarts_de_finale['lien'];?>" target="_blank"  title="Billetterie Réservation"><span class="border-icon"><i class="fa-sharp fa-solid fa-ticket"></i></span></a></div>
+                                <div class="lcel-billet"><a href="<? echo $quarts_de_finale['lien'];?>" target="_blank"  title="Billetterie Réservation"><span class="border-icon"><i class="fa-sharp fa-solid fa-ticket"></i></span></a></div>
                             <?php endif;?>
                         </div>
                     </div>
@@ -69,14 +69,14 @@ $final_four= get_field('final_four');
                 <?php foreach($final_four as $ff){?>
                     <div class="listes-calendrier-element" style="grid-area: c;">
                         <div class="lcel-date">
-                            <div class="lcel-jour"><?php echo $ff['jour'];?></div>
-                            <div><?php echo $ff['mois'];?></div>
+                            <div class="lcel-jour"><? echo $ff['jour'];?></div>
+                            <div><? echo $ff['mois'];?></div>
                         </div>
                         <div class="lcel-details">
-                            <div class="lcel-details-title"><?php echo $ff['titre'];?></div>
-                            <div class="lcel-lieu"><?php echo $ff['lieu'];?></div>
+                            <div class="lcel-details-title"><? echo $ff['titre'];?></div>
+                            <div class="lcel-lieu"><? echo $ff['lieu'];?></div>
                             <?php if($ff['lien']):?>
-                                <div class="lcel-billet"><a href="<?php echo $ff['lien'];?>" target="_blank"  title="Billetterie Réservation"><span class="border-icon"><i class="fa-sharp fa-solid fa-ticket"></i></span></a></div>
+                                <div class="lcel-billet"><a href="<? echo $ff['lien'];?>" target="_blank"  title="Billetterie Réservation"><span class="border-icon"><i class="fa-sharp fa-solid fa-ticket"></i></span></a></div>
                             <?php endif;?>
                         </div>
                     </div>
